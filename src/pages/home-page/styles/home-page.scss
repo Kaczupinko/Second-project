@@ -1,0 +1,13 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+
+
+@use 'advantages-section';
+@use 'advantage-box-component';
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
