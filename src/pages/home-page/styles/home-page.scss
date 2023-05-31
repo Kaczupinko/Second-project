@@ -11,3 +11,34 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.main-screen {
+  align-items: flex-end;
+  background-color: var(--licorice);
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 810px;
+  padding: 64px 144px;
+  width: 1440px;
+
+  .albums {
+
+
+    .first-panel {
+
+      .first-panel__image {}
+
+      .name lato-bold-white-24px {}
+
+      .info lato-normal-white-16px {}
+
+      .button-frame {
+        .play-button-arrowhead {}
+
+        .start-listening lato-bold-black-16px {}
+      }
+    }
+  }
+}
