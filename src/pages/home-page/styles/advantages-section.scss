@@ -1,41 +1,12 @@
 ///tło, marginesy, wygląd przycisków, opisy i obrazy.
 
-:root {
-    --black: rgba(0, 0, 0, 1);
-    --licorice: rgba(18, 18, 18, 1);
-    --shark: rgba(41, 41, 41, 1);
-    --tuatura: rgba(52, 52, 52, 1);
-    --fern: rgba(101, 212, 101, 1);
-    --white: rgba(255, 255, 255, 1);
-
-    --font-size-m: 16px;
-    --font-size-l: 24px;
-
-    --font-family-inter: "Inter";
-    --font-family-lato: "Lato";
-}
-
-.lato-bold-white-24px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: (--font-size-l);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lato-bold-white-16px {
-    color: var(--black);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-m);
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lato-bold-white-16px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-m);
-    font-weight: 400;
-    font-style: normal;
+.first-panel__image,
+.second-panel__image,
+.third-panel__image {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: #EAA3A3;
+    border-radius: 16px;
 
 }
