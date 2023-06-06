@@ -3,6 +3,16 @@
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
+    --black: rgba(0, 0, 0, 1);
+    --licorice: rgba(18, 18, 18, 1);
+    --shark: rgba(41, 41, 41, 1);
+    --tuatura: rgba(52, 52, 52, 1);
+    --fern: rgba(101, 212, 101, 1);
+    --white: rgba(255, 255, 255, 1);
+
+    --font-size-m: 16px;
+    --font-size-l: 24px;
+
+    --font-family-inter: "Inter";
+    --font-family-lato: "Lato";
 }

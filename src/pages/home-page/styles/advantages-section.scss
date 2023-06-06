@@ -1,17 +1,84 @@
 ///tło, marginesy, wygląd przycisków, opisy i obrazy.
-
-.first-panel__image,
-.second-panel__image,
-.third-panel__image {
+.advantage-section {
+    box-sizing: border-box;
+    display: flex;
     position: relative;
-    width: 140px;
-    height: 140px;
-    background: #EAA3A3;
-    border-radius: 16px;
+    width: 1136px;
+    height: 176px;
+    border: 1px solid var(--licorice);
+    border-radius: 32px;
 
-}
+    .advantage-section-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        width: 1088px;
+        height: 128px;
+        background: linear-gradient(90.79deg, #65D46E -8.89%, #0B280D 100%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+        margin: 24px;
+        overflow: hidden;
 
-.overlay-group img {
-    width: 585px;
-    height: 395px;
+        .button-frame {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            gap: 8px;
+            position: relative;
+            width: 165px;
+            height: 48px;
+            left: 891px;
+            z-index: 3;
+            background: var(--white);
+            border-radius: 200px;
+
+            .play-button-arrowhead {
+                position: relative;
+                width: 12px;
+                height: 12px;
+            }
+
+            .start-listening {
+                width: 97px;
+                height: 16px;
+            }
+        }
+
+        .rectangle {
+            position: relative;
+            width: 632px;
+            height: 150px;
+            background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
+            left: 688px;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: relative;
+            width: 849px;
+            height: 555px;
+            left: 242px;
+            bottom: 0px;
+
+            .bottom-image {
+                position: relative;
+                transform: scale(1.8);
+                background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
+
+            }
+        }
+
+        .bottom-text {
+            display: flex;
+            position: relative;
+            width: 90%;
+            right: 690px;
+
+        }
+    }
 }

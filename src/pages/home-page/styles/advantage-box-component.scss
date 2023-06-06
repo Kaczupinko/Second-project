@@ -1,45 +1,84 @@
 ///  style dla kontenera komponentu, obrazu, tekstu, przycisku i innych elementów
 
-:root {
-    --black: rgba(0, 0, 0, 1);
-    --licorice: rgba(18, 18, 18, 1);
-    --shark: rgba(41, 41, 41, 1);
-    --tuatura: rgba(52, 52, 52, 1);
-    --fern: rgba(101, 212, 101, 1);
-    --white: rgba(255, 255, 255, 1);
+.advantage-box {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    width: 1136px;
+    height: 470px;
+    background: var(--black);
+    border: 1px solid var(--licorice);
+    border-radius: 32px;
+    gap: 16px;
+    justify-content: center;
 
-    --font-size-m: 16px;
-    --font-size-l: 24px;
+    .first-page,
+    .second-page,
+    .third-page {
+        position: relative;
+        width: 352px;
+        height: 422px;
+        background: var(--shark);
+        border-radius: 32px;
+        margin-top: 24px;
 
-    --font-family-inter: "Inter";
-    --font-family-lato: "Lato";
-}
 
-.lato-bold-white-24px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: (--font-size-l);
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 100%;
-}
+        .first-page__image,
+        .second-page__image,
+        .third-page__image {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            background: #EAA3A3;
+            border-radius: 16px;
+            margin: 24px;
 
-.lato-bold-black-16px {
-    color: var(--black);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-m);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-}
+        }
 
-.lato-bold-white-16px {
-    color: var(--white);
-    font-family: var(--font-family-lato);
-    font-size: var(--font-size-m);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
+        .group-artist-description {
 
+            .artist {
+                position: relative;
+                width: 199px;
+                height: 48px;
+                margin-left: 24px;
+                margin-bottom: 16px;
+            }
+
+            .description {
+                position: relative;
+                width: 304px;
+                height: 44px;
+                margin-left: 24px;
+                margin-bottom: 46px;
+                opacity: 0.5;
+            }
+        }
+
+        .button-frame {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            gap: 8px;
+            position: relative;
+            width: 165px;
+            height: 48px;
+            background: #65D46E;
+            border-radius: 200px;
+            margin-left: 24px;
+
+            .play-button-arrowhead {
+                width: 12px;
+                height: 12px;
+            }
+
+            .start-listening {
+                width: 97px;
+                height: 16px;
+            }
+        }
+
+    }
 }
