@@ -7,6 +7,19 @@
     height: 176px;
     border: 1px solid var(--licorice);
     border-radius: 32px;
+    $breakpoint-834px: 834px;
+    $breakpoint-375px: 375px;
+
+    @media (max-width: #{$breakpoint-834px}) {
+        width: 770px;
+        height: 176px;
+    }
+
+    @media (max-width: #{$breakpoint-375px}) {
+        width: 343px;
+        height: 232px;
+        border-radius: 24px;
+    }
 
     .advantage-section-box {
         display: flex;
@@ -20,7 +33,14 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 24px;
         margin: 24px;
-        overflow: hidden;
+
+
+        @media (max-width: #{$breakpoint-834px}) {}
+
+        @media (max-width: #{$breakpoint-375px}) {
+            width: 311px;
+            height: 200px;
+        }
 
         .button-frame {
             display: flex;
@@ -32,10 +52,19 @@
             position: relative;
             width: 165px;
             height: 48px;
-            left: 891px;
+            left: 888px;
             z-index: 3;
             background: var(--white);
             border-radius: 200px;
+
+            @media (max-width: #{$breakpoint-834px}) {
+                left: 520px;
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                left: 20px;
+                top: 40px;
+            }
 
             .play-button-arrowhead {
                 position: relative;
@@ -46,6 +75,8 @@
             .start-listening {
                 width: 97px;
                 height: 16px;
+
+
             }
         }
 
@@ -56,20 +87,46 @@
             background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
             left: 688px;
             z-index: 2;
+
+            @media (max-width: #{$breakpoint-834px}) {
+                left: 430px;
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                left: 110px;
+            }
         }
 
         .overlay {
             position: relative;
             width: 849px;
             height: 555px;
-            left: 242px;
+            left: 234px;
             bottom: 0px;
+
+            @media (max-width: #{$breakpoint-834px}) {}
+
+            @media (max-width: #{$breakpoint-375px}) {
+                width: 343px;
+                height: 232px;
+                left: 10px;
+            }
 
             .bottom-image {
                 position: relative;
                 transform: scale(1.8);
                 background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
 
+                @media (max-width: #{$breakpoint-834px}) {
+                    transform: scale(3.3);
+                    left: 50px;
+                }
+
+                @media (max-width: #{$breakpoint-375px}) {
+                    display: flex;
+                    transform: scale(22.3);
+                    left: 50px;
+                }
             }
         }
 
@@ -78,7 +135,21 @@
             position: relative;
             width: 90%;
             right: 690px;
+            letter-spacing: -0.00em;
 
+            @media (max-width: #{$breakpoint-834px}) {
+                width: 170%;
+                right: 430px;
+
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                width: 253px;
+                height: 48px;
+                line-height: 100%;
+                right: 170px;
+                bottom: 40px;
+            }
         }
     }
 }

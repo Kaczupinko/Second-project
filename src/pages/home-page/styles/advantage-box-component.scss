@@ -12,15 +12,56 @@
     gap: 16px;
     justify-content: center;
 
+    $breakpoint-834px: 834px;
+    $breakpoint-375px: 375px;
+
+    @media (max-width: #{$breakpoint-834px}) {
+        width: 770px;
+        height: 763px;
+        display: block;
+        ;
+
+
+    }
+
+    @media (max-width: #{$breakpoint-375px}) {
+        width: 343px;
+        height: 1076px;
+
+    }
+
     .first-page,
     .second-page,
     .third-page {
         position: relative;
+        display: flex;
         width: 352px;
         height: 422px;
         background: var(--shark);
-        border-radius: 32px;
+        border-radius: 24px;
         margin-top: 24px;
+
+        @media (max-width: #{$breakpoint-834px}) {
+            width: 722px;
+            height: 228px;
+            margin-top: 0px;
+            flex-direction: column;
+            margin-block-end: 16px;
+            margin-block-start: 20px;
+
+            margin-left: 24px;
+            border-radius: 32px;
+
+
+        }
+
+        @media (max-width: #{$breakpoint-375px}) {
+            width: 311px;
+            height: 340px;
+            margin-top: 16px;
+            margin-left: 16px;
+            ;
+        }
 
 
         .first-page__image,
@@ -31,11 +72,40 @@
             height: 140px;
             background: #EAA3A3;
             border-radius: 16px;
-            margin: 24px;
+            margin: 23px;
 
+            @media (max-width: #{$breakpoint-834px}) {
+                width: 108px;
+                height: 108px;
+                border-radius: 12px;
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                margin-left: 16px;
+                margin-top: 16px;
+            }
         }
 
         .group-artist-description {
+            @media (max-width: #{$breakpoint-834px}) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                padding: 0px;
+                gap: 16px;
+                position: relative;
+                width: 409px;
+                height: 86px;
+                left: 130px;
+                bottom: 140px;
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                width: 266px;
+                height: 96px;
+
+            }
 
             .artist {
                 position: relative;
@@ -43,6 +113,20 @@
                 height: 48px;
                 margin-left: 24px;
                 margin-bottom: 16px;
+
+                @media (max-width: #{$breakpoint-834px}) {
+                    width: 266px;
+                    height: 48px;
+                    margin-bottom: 0px;
+
+                }
+
+                @media (max-width: #{$breakpoint-375px}) {
+                    width: 266px;
+                    height: 48px;
+                    right: 136px;
+                    top: 130px;
+                }
             }
 
             .description {
@@ -50,8 +134,25 @@
                 width: 304px;
                 height: 44px;
                 margin-left: 24px;
-                margin-bottom: 46px;
+                margin-bottom: 44px;
                 opacity: 0.5;
+                letter-spacing: -0.01em;
+                line-height: 130%;
+
+                @media (max-width: #{$breakpoint-834px}) {
+                    width: 409px;
+                    height: 22px;
+                    line-height: 140%;
+
+                }
+
+                @media (max-width: #{$breakpoint-375px}) {
+                    width: 280px;
+                    height: 40px;
+                    right: 136px;
+                    top: 130px;
+                    line-height: 130%;
+                }
             }
         }
 
@@ -68,6 +169,16 @@
             background: #65D46E;
             border-radius: 200px;
             margin-left: 24px;
+
+            @media (max-width: #{$breakpoint-834px}) {
+                bottom: 100px;
+                left: 130px;
+            }
+
+            @media (max-width: #{$breakpoint-375px}) {
+                top: 30px;
+                left: -10px;
+            }
 
             .play-button-arrowhead {
                 width: 12px;

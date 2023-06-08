@@ -10,19 +10,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+
+
+
 }
 
 .advantage {
-  align-items: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 810px;
   width: 1440px;
   background: var(--black);
   gap: 24px;
 
+
   $breakpoint-834px: 834px;
   $breakpoint-375px: 375px;
+
+  @media (max-width: #{$breakpoint-834px}) {
+    width: 834px;
+    height: 1039px;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  @media (max-width: #{$breakpoint-375px}) {
+    width: 375px;
+    height: 1388px;
+  }
 
   ///  @media (max-width: #{$breakpoint-834px})   
   ///  @media (max-width: #{$breakpoint-375px}) 
